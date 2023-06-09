@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>34. Find First and Last Position of Element in Sorted Array</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/showdown@2.0.3/dist/showdown.min.js"
+    ></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>-->
+  </head>
+
+  <body>
+    <div id="markdown-content"></div>
+
+    <script>
+      // Get the Markdown content from the file
+      fetch("34.md")
+        .then((response) => response.text())
+        .then((markdown) => {
+          // Convert Markdown to HTML
+          const converter = new showdown.Converter();
+          const html = converter.makeHtml(markdown);
+
+          // Insert the HTML content into a div with id "markdown-content"
+          document.getElementById("markdown-content").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
