@@ -6,14 +6,25 @@
       body {
         font-family: Arial, sans-serif;
         margin: 40px;
+        background-color: #f0f5ff;
       }
 
       h1 {
         color: #333;
       }
-
+      .directory {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
       .algorithm-class {
         margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
       }
 
       .algorithm-class h2 {
@@ -39,6 +50,7 @@
     <div>Here includes several representative leetcode problem solutions. They are classified by their features and techniques used to solve them.
       Some problems are in more than one categories.
     </div>
+    <div class="directory">
     <div class="algorithm-class">
       <h2>BFS/DFS</h2>
       <a class="algorithm-link" href="./medium/200.html"
@@ -417,6 +429,7 @@
       <a class="algorithm-link" href="./hard/41.html"
         >41. First Missing Positive (Array)</a
       >
+    </div>
     </div>
   </body>
 </html>
