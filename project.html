@@ -3,41 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Projects</title>
+    <title>Personal Project Display Board</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #FFD3B6, #FFE5B2); /* Gradient background */
         }
-        .project {
+        h1 {
+            text-align: center;
             margin-bottom: 30px;
         }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project {
+            width: 45%;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #F8F8F8; /* White background for individual project cards */
+        }
         .project img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
+        .project-content {
+            padding: 15px;
+        }
         .project h2 {
-            margin-top: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
         .project p {
-            margin-top: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>My Personal Projects</h1>
-    <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h2>BackRoads Tour</h2>
-        <p>Brief introduction about Project 1.</p>
-        <p><a href="https://bucolic-buttercream-a85292.netlify.app/">Learn More</a></p>
+    <h1>Personal Project Display Board</h1>
+    <div class="projects-container">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-content">
+                <h2>Backroads app</h2>
+                <p>Brief introduction about Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="https://bucolic-buttercream-a85292.netlify.app/">Learn More</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-content">
+                <h2>Cart</h2>
+                <p>Brief introduction about Project 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="https://aquamarine-smakager-e34e1e.netlify.app/">Learn More</a></p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
     </div>
-    <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h2>Cart</h2>
-        <p>Brief introduction about Project 2.</p>
-        <p><a href="https://aquamarine-smakager-e34e1e.netlify.app/">Learn More</a></p>
-    </div>
-    <!-- Add more projects as needed -->
 </body>
 </html>
 
